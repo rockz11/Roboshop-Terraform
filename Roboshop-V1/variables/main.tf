@@ -24,5 +24,5 @@ resource "aws_route53_record" "frontend" {
   records = [aws_instance.frontend.private_ip]
 }
 output "public_ip" {
-  value = aws_instance.private_ip
+  value = aws_instance.frontend.private_ip
 }
