@@ -13,6 +13,11 @@ resource "aws_route53_record" "frontend" {
   ttl     = 30
   records = [aws_instance.frontend.private_ip]
 }
+output "public_ip" {
+  value = "aws_instance.public_ip"
+}
+
+
 resource "aws_instance" "redis" {
   ami           = "ami-09c813fb71547fc4f"
   instance_type = "t3.small"
