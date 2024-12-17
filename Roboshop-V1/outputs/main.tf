@@ -5,3 +5,6 @@
 #   value = example.com
 # }
 variable "trainer_name" {}
+output "trainer_name" {
+  value = var.trainer_name
+}
