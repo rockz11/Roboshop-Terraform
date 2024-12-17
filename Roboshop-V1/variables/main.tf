@@ -1,5 +1,5 @@
 variable "URL" {
-  default = "WWW.google.com"
+  default = "google.com"
 }
 output "URL" {
   value = "var.URL" # Accessing a variable.
