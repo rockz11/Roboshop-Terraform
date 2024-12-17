@@ -43,12 +43,27 @@ output "srt1" {
 }
 variable "list" {
   default = [
-    1,
-    11,
-    111,
+    1, #[0]
+    11, #[1]
+    111, #
     1111
   ]
 }
 output "list" {
   value = var.list[3]
+}
+variable "map" {
+  default = {
+    aws = {
+      trainer = "PRUDHVI RAJ"
+      experience = 11
+    }
+    devops = {
+      trainer = "Prabhas"
+      experience = 16
+    }
+  }
+}
+output "map_experience" {
+  value = var.map_experience["aws"]["experience"]
 }
