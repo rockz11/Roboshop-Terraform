@@ -4,4 +4,4 @@
 # output "URL" {
 #   value = example.com
 # }
-variable "name" {}
+variable "trainer_name" {}
