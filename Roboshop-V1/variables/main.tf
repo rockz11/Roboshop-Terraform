@@ -64,6 +64,6 @@ variable "map" {
     }
   }
 }
-output "map_experience" {
-  value = var.map_experience["aws"]["experience"]
+output "map" {
+  value = var.map["aws"]["experience"]
 }
