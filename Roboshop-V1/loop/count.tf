@@ -18,7 +18,7 @@ variable "instances" {
 
 
 
-resource "aws_instance" "instance" {
+resource "aws_instance" "instances" {
   count = length(var.instances)
   ami           = "ami-09c813fb71547fc4f"
   instance_type = "t3.small"
