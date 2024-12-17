@@ -27,7 +27,7 @@ resource "aws_instance" "instance" {
     Name = var.instances[count.index]
   }
 }
-resource "aws_route53_record" "frontend"
+resource "aws_route53_record" "record"
   count = length(var.instances)
   zone_id = "Z00196431INWTJ0O5YT57"
   name    = "${var.instances[count.index]}-dev.devops11.online"
