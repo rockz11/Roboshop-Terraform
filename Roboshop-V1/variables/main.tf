@@ -24,5 +24,5 @@ resource "aws_instance" "frontend" {
 #   records = [aws_instance.frontend.private_ip]
 # }
 output "public_ip" {
-  value = "aws_instance.public_ip"
+  value = aws_instance.public_ip
 }
