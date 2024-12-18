@@ -35,5 +35,5 @@ resource "aws_route53_record" "record" {
   name    = "${each.key}-dev.devops11.online"
   type    = "A"
   zone_id = "Z00196431INWTJ0O5YT57"
-  records = [aws_instance.instance[each.key].pwdprivate_ip]
+  records = [aws_instance.instance[each.key].private_ip]
 }
