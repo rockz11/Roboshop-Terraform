@@ -1,5 +1,5 @@
 module "roboshop" {
-  for_each = var.roboshop
+  for_each = var.component_name
   source = "./module"
   component_name = each.key
 }
